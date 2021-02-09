@@ -3,7 +3,7 @@
 ## Webpage
 
 
-This is a a project to programm a webpage.
+This is a a project to programm a website.
 
 This project is done by: Sahar Zahran.
 
