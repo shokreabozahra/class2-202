@@ -127,20 +127,19 @@ if(guessedNumber == playNumber) {
         answer.toLowerCase;
         console.log("the answer of user: " + answer);
             switch(answer){
-                 case galaxy[0]:
-                 case galaxy[1]:
-                 case galaxy[2]:
-                     break;
-                 case galaxy[3]:
-                     alert("Good! that's right");
-                     breakCheck1 = true;
-                     score++;
-                     break;
-                 case galaxy[4]:
-                 case galaxy[5]:
-                 case galaxy[6]:
-                 case galaxy[7]:
-                default:
+                case galaxy[3]:
+                    alert("Good! that's right");
+                    breakCheck1 = true;
+                    score++;
+                    break;
+                   case galaxy[0]:
+                   case galaxy[1]:
+                   case galaxy[2]:
+                   case galaxy[4]:
+                   case galaxy[5]:
+                   case galaxy[6]:
+                   case galaxy[7]:
+                   default:
                     alert("Wrong answer! \n Try again");
             }
             if (breakCheck1) break;
