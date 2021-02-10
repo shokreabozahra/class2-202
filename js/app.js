@@ -43,10 +43,10 @@ question = question3.toLocaleLowerCase();
 testAnswer();}
 questionOfMajor();
 
-
-let question4 = prompt("I worked as a teacher before. Do you think I was an English teacher?");
+function questionOfExperience1(){let question4 = prompt("I worked as a teacher before. Do you think I was an English teacher?");
 question = question4.toLocaleLowerCase();
-testAnswer();
+testAnswer();}
+questionOfExperience1();
 
 
 let question5 = prompt("I tried to set up my own business, do you think it is continuing for now?");
