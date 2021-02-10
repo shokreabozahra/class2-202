@@ -26,11 +26,12 @@ function testAnswer(){
     
 }
 let question;
-
-let question1 = prompt("Do I live in Amman??");
+function questionOfCity(){let question1 = prompt("Do I live in Amman??");
 question = question1.toLocaleLowerCase();
 testAnswer();
+}
 
+questionOfCity();
 
 let question2 = prompt("More than two years ago I started studying programming, do you think I do that because just for its wide fields in the job market?");
 question = question2.toLocaleLowerCase();
