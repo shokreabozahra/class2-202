@@ -53,31 +53,33 @@ question = question5.toLocaleLowerCase();
 testAnswer();}
 
 questionOfExperience2();
-
-let playNumber = Math.trunc(Math.random()* 10);
-console.log(playNumber);
-
-let i =0;
-for(; i<4; i++){ 
-let guessedNumber = prompt(userName + " guess a number between 1 and 10 (You have 4 chances)??");
-console.log("the number entered by user" + guessedNumber);
-if(guessedNumber == playNumber) {
-    alert("Wooow you guessed it !!");
-    score++;
-
-    break;
-}else if (guessedNumber>playNumber){
-    alert("Too high");
-    continue;
-}else{
-    alert("Too low");
-    continue;
-     }
+function questionOfGame1(){let playNumber = Math.trunc(Math.random()* 10);
+    console.log(playNumber);
+    
+    let i =0;
+    for(; i<4; i++){ 
+    let guessedNumber = prompt(userName + " guess a number between 1 and 10 (You have 4 chances)??");
+    console.log("the number entered by user" + guessedNumber);
+    if(guessedNumber == playNumber) {
+        alert("Wooow you guessed it !!");
+        score++;
+    
+        break;
+    }else if (guessedNumber>playNumber){
+        alert("Too high");
+        continue;
+    }else{
+        alert("Too low");
+        continue;
+         }
+        }
+        if(i==4){
+            alert("The number was " + playNumber + " We are sorry !")
+            
+        }
     }
-    if(i==4){
-        alert("The number was " + playNumber + " We are sorry !")
-        
-    }
+    questionOfGame1();
+
 
     
     let galaxy = ["company", "restaurant", "cafe", "flower shop", "supermarket", "beauty center", "school", "university"];
