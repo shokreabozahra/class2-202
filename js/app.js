@@ -9,90 +9,48 @@ document.write("welcome to my website! " + userName);
 
 alert("let us have some fun!! answer these questions with yes / no or by y / n");
 
+
+function testAnswer(){
+    switch(question){
+        case "yes":
+        case "y" :
+        //    console.log("It is a wrong answer");
+            alert("It is a wrong answer");
+            break;    
+        case "no" :
+        case "n":
+            // console.log("Good, it is a right answer");
+            alert("Good, it is a right answer");
+            break;
+    }
+    
+}
 let question;
 
 let question1 = prompt("Do I live in Amman??");
 question = question1.toLocaleLowerCase();
-
-switch(question){
-    case "yes":
-    case "y" :
-    //    console.log("It is a wrong answer");
-        alert("It is a wrong answer");
-        break;    
-    case "no" :
-    case "n":
-        // console.log("Good, it is a right answer");
-        alert("Good, it is a right answer");
-        break;
-}
+testAnswer();
 
 
 let question2 = prompt("More than two years ago I started studying programming, do you think I do that because just for its wide fields in the job market?");
 question = question2.toLocaleLowerCase();
-switch(question){
-    case "yes":
-    case "y" :
-    //    console.log("It is a wrong answer");
-        alert("It is a wrong answer");
-        break;    
-    case "no" :
-    case "n":
-        // console.log("Good, it is a right answer");
-        alert("Good, it is a right answer");
-        score++;
+testAnswer();
 
-        break;
-}
 
 let question3 = prompt("Do you think I studied an Electrical engineering?");
 question = question3.toLocaleLowerCase();
-switch(question){
-    case "yes":
-    case "y" :
-    //    console.log("It is a wrong answer");
-        alert("It is a wrong answer");
-        break;    
-    case "no" :
-    case "n":
-        // console.log("Good, it is a right answer");
-        alert("Good, it is a right answer");
-        score++;
-        break;
-}
+testAnswer();
+
 
 let question4 = prompt("I worked as a teacher before. Do you think I was an English teacher?");
 question = question4.toLocaleLowerCase();
-switch(question){
-    case "yes":
-    case "y" :
-    //    console.log("It is a wrong answer");
-        alert("It is a wrong answer");
-        break;    
-    case "no" :
-    case "n":
-        // console.log("Good, it is a right answer");
-        alert("Good, it is a right answer");
-        score++;
-        break;
-}
+testAnswer();
+
 
 let question5 = prompt("I tried to set up my own business, do you think it is continuing for now?");
 question = question5.toLocaleLowerCase();
-switch(question){
-    case "yes":
-    case "y" :
-    //    console.log("It is a wrong answer");
-        alert("It is a wrong answer");
-        break;    
-    case "no" :
-    case "n":
-        // console.log("Good, it is a right answer");
-        alert("Good, it is a right answer");
-        score++;
+testAnswer();
 
-        break;
-}
 
 let playNumber = Math.trunc(Math.random()* 10);
 console.log(playNumber);
@@ -116,7 +74,7 @@ if(guessedNumber == playNumber) {
     }
     if(i==4){
         alert("The number was " + playNumber + " We are sorry !")
-
+        
     }
 
     
