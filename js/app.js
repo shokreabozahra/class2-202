@@ -48,11 +48,11 @@ question = question4.toLocaleLowerCase();
 testAnswer();}
 questionOfExperience1();
 
-
-let question5 = prompt("I tried to set up my own business, do you think it is continuing for now?");
+function questionOfExperience2(){let question5 = prompt("I tried to set up my own business, do you think it is continuing for now?");
 question = question5.toLocaleLowerCase();
-testAnswer();
+testAnswer();}
 
+questionOfExperience2();
 
 let playNumber = Math.trunc(Math.random()* 10);
 console.log(playNumber);
