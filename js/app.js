@@ -81,8 +81,7 @@ function questionOfGame1(){let playNumber = Math.trunc(Math.random()* 10);
     questionOfGame1();
 
 
-    
-    let galaxy = ["company", "restaurant", "cafe", "flower shop", "supermarket", "beauty center", "school", "university"];
+    function questionOfGame2(){let galaxy = ["company", "restaurant", "cafe", "flower shop", "supermarket", "beauty center", "school", "university"];
     let breakCheck1 = false;
     for (let i =0; i<6; i++){
         let answer = prompt(userName + " If I were not an engineer, where do you think I would have liked to have worked ????\nChoose from this list: \ncompany, resturant, cafe, flower shop, supermarket, beauty center, school, university");
@@ -111,7 +110,8 @@ function questionOfGame1(){let playNumber = Math.trunc(Math.random()* 10);
         alert("Your score is : " + score);
     
     alert("It was a great time " + userName + ", come to visit my website again!");
-
+}
+    questionOfGame2();
         
     
     // var breakCheck1 = false;
