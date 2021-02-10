@@ -38,10 +38,10 @@ testAnswer();
 }
 questionOfWork();
 
-
-let question3 = prompt("Do you think I studied an Electrical engineering?");
+function questionOfMajor(){let question3 = prompt("Do you think I studied an Electrical engineering?");
 question = question3.toLocaleLowerCase();
-testAnswer();
+testAnswer();}
+questionOfMajor();
 
 
 let question4 = prompt("I worked as a teacher before. Do you think I was an English teacher?");
