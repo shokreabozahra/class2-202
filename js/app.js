@@ -32,10 +32,11 @@ testAnswer();
 }
 
 questionOfCity();
-
-let question2 = prompt("More than two years ago I started studying programming, do you think I do that because just for its wide fields in the job market?");
+function questionOfWork(){let question2 = prompt("More than two years ago I started studying programming, do you think I do that because just for its wide fields in the job market?");
 question = question2.toLocaleLowerCase();
 testAnswer();
+}
+questionOfWork();
 
 
 let question3 = prompt("Do you think I studied an Electrical engineering?");
